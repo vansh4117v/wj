@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --gray-color: #2f2f2f;
+    --lightgray-color: #838383;
+    --red-color: rgb(155, 0, 0);
+    --lightred-color: rgb(224, 0, 0);
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: linear-gradient(var(--red-color),var(--gray-color));
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--lightred-color);
+    border-radius: 10px;
+    width: 5px;
+  }
+
+
+/* ------------------universal things---------------- */
+.header{
+    height: 100px;
+    background-image: url(./Images/header.png);
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a img {
+    margin: 0;
+    padding: 0;
+    margin-top: -25px;
+    width: 250px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+    margin-top: -25px;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px;
+    position: relative;
+    gap: 10px;
+}
+
+.nav-links ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+.more {
+    display: none;
+}
+
+ul li:focus-within .more,
+ul li:hover .more {
+    display: block;
+    position: absolute;
+    border: 2px solid white;
+    z-index: 10;
+    color: white;
+    margin-top: 2px;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 1s ease-in-out;
+    background-image: linear-gradient(180deg, var(--red-color), var(--gray-color), var(--gray-color));
+}
+
+.more ul li a {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f10;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+nav .fa {
+    display: none;
+}
+
+#bttbtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px;
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 1px solid #222;
+    color: #222;
+    font-size: 25px;
+    padding: 10px 30px;
+    background: white;
+  }
+
+  @media(max-width: 840px) {
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: #2f2f2f;
+        background-image: linear-gradient(180deg, var(--red-color), var(--gray-color), var(--gray-color));
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+        margin-top: 0;
+    }
+
+    nav a img{
+        display: none;
+    }
+
+    nav .fa {
+        display: contents;
+        color: rgb(255, 255, 255);
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 10px;
+    }
+
+    .nav-links ul li a {
+        font-size: 18px;
+    }
+
+    .more {
+        width: 130px;
+    }
+
+    .more ul li a {
+        margin-left: -15px;
+        font-size: 18px;
+    }
+}
+
+/* -------------------------pooja---------------------- */
+#poojan{
+    display: flex;
+    flex-direction: row;
+}
+
+.color1{
+    background-image: linear-gradient(to right, var(--lightgray-color), var(--gray-color));
+    width: 9.7%;
+}
+.color3{
+    background-image: linear-gradient(to right, var(--gray-color), var(--lightgray-color));
+    width: 9.7%;
+}
+
+.color2{
+    background-color: white;
+    width: 0.3%;
+}
+
+.pooja{
+    background-image: linear-gradient(to right, var(--red-color), var(--lightred-color), var(--lightred-color), var(--lightred-color), var(--red-color));
+    width: 80%;
+}
+
+.pooja1 h3{
+    text-align: center;
+    font-size: 45px;
+    /* color: var(--lightred-color); */
+    color: #FFDF00;
+    /* -webkit-text-stroke: 1px white; */
+    font-family: "Laila", serif;
+    padding: 30px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.pooja1 h3::after {
+    content: '';
+    width: 0%;
+    height: 4px;
+    background-color: white;
+    display: block;
+    margin: auto;
+    transition: 0.8s;
+}
+
+.pooja1 h3:hover::after {
+    width: 50%;
+}
+
+.pooja1 p{
+    text-align: right;
+    margin-right: 200px;
+    color: white;
+    font-family: "Laila", serif;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 23px;
+}
+
+.pooja2 h4{
+    text-align: left;
+    font-size: 35px;
+    font-family: "Alkatra", system-ui;
+    margin-left: 300px;
+    color: peachpuff;
+    margin-top: 50px;
+}
+
+.pooja2 h5{
+    text-align: center;
+    font-size: 30px;
+    font-family: "Laila", serif;
+    color: white;
+}
+
+.pooja2 h6{
+    text-align: center;
+    font-family: "Jaini", system-ui;
+    font-size: 27px;
+    font-weight: 400;
+    margin: 10px;
+    color: peachpuff;
+}
+
+@media(max-width: 700px){
+
+    .color1{
+        width: 6.7%;
+    }
+
+    .color3{
+        width: 6.7%;
+    }
+
+    .pooja{
+        width: 86%;
+    }
+
+.pooja1 p{
+    font-size: 16px;
+    margin: 0;
+}
+
+    .pooja2 h4{
+        margin: 10px;
+        text-align: center;
+    }
+
+    .pooja2 h5{
+        font-size: 16px;
+    }
+
+    .pooja2 h6{
+        font-size: 16px;
+    }
+}
+
+/* -----------aarti------------- */
+
+#aarti{
+    padding: 50px;
+    background-image: linear-gradient(to bottom right, var(--red-color), var(--gray-color));
+
+}
+
+#aarti h3{
+    font-size: 56px;
+    text-align: center;
+    padding-bottom: 50px;
+    color: white;
+    font-family: "Alkatra", system-ui;
+}
+
+#aarti p{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-family: "Alkatra", system-ui;
+}
+
+#bttbtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px;
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 2px solid #222;
+    color: #222;
+    font-size: 25px;
+    padding: 10px 30px;
+    background: white;
+  }
+
+@media(max-width: 700px){
+    #aarti{
+        padding: 20px;
+    }
+    #aarti h3{
+        font-size: 30px;
+    }
+    #aarti p{
+        font-size: 18px;
+    }
+}
+
+
+/* -----------documentary---------- */
+
+#documentary{
+    background-image: linear-gradient(180deg , var(--red-color) , var(--gray-color));
+}
+
+#documentary h2{
+    text-align: center;
+    color: white;
+    font-size: 56px;
+    font-family: "Alice", serif;
+    font-weight: 1000;
+}
+#documentary p{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: "Alice", serif;
+    font-weight: 500;
+}
+
+#documentary iframe{
+    margin: 35px 340px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+@media(max-width: 700px){
+    #documentary{
+        height: 1200px;
+    }
+    #documentary h2{
+        font-size: 30px;
+        padding: 20px;
+    }
+    #documentary p{
+        font-size: 18px;
+    }
+    #documentary iframe{
+        display: block;
+        margin: auto;
+        margin-top: 50px;
+        height: 196.875px;
+        width: 350px;
+    }
+}

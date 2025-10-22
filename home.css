@@ -1,0 +1,887 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --gray-color: #2f2f2f;
+  --lightgray-color: #838383;
+  --red-color: rgb(155, 0, 0);
+  --lightred-color: rgb(224, 0, 0);
+  --bg-color: #654321;
+  --light-bg-color: #865b2f;
+  --universal-color: #f9f3e7;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: linear-gradient(var(--red-color), var(--gray-color));
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--lightred-color);
+  border-radius: 10px;
+  width: 5px;
+}
+
+/* ----------------head---------------- */
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("./Images/head.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 20px;
+  position: relative;
+  gap: 10px;
+}
+
+.nav-links ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+.more {
+  display: none;
+}
+
+ul li:focus-within .more,
+ul li:hover .more {
+  display: block;
+  position: absolute;
+  border: 2px solid white;
+  z-index: 10;
+  color: white;
+  margin-top: 2px;
+  border-radius: 10px;
+  padding: 5px;
+  transition: 1s ease-in-out;
+  background-image: linear-gradient(
+    180deg,
+    var(--red-color),
+    var(--gray-color),
+    var(--gray-color)
+  );
+}
+
+.more ul li a {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f10;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.text-box {
+  width: 90%;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 62px;
+  font-family: "Berkshire Swash", serif;
+  font-weight: 800;
+}
+
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-family: "Reddit Sans", serif;
+  font-weight: 500;
+}
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  padding: 12px 34px;
+  font-size: 15px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+}
+
+.hero-btn:hover {
+  border: 1px solid #ff1100;
+  background: #ff1100;
+  transition: 1s;
+}
+
+nav .fa {
+  display: none;
+}
+
+#bttbtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  border: 1px solid #222;
+  color: #222;
+  font-size: 25px;
+  padding: 10px 30px;
+  background: white;
+}
+
+@media (max-width: 840px) {
+  .text-box h1 {
+    font-size: 30px;
+  }
+
+  .nav-links ul li {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    background: #2f2f2f;
+    background-image: linear-gradient(
+      180deg,
+      var(--red-color),
+      var(--gray-color),
+      var(--gray-color)
+    );
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  nav .fa {
+    display: contents;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .nav-links ul {
+    padding: 10px;
+  }
+
+  .nav-links ul li a {
+    font-size: 18px;
+  }
+
+  .more {
+    width: 130px;
+  }
+
+  .more ul li a {
+    margin-left: -15px;
+    font-size: 18px;
+  }
+
+  #bttbtn {
+    bottom: 60px;
+  }
+}
+
+/* ----------------------tafpatra-------------------- */
+
+#tadpatra {
+  margin: 0;
+  background: var(--light-bg-color);
+  border: 10px solid var(--bg-color);
+}
+
+#tadpatra h1 {
+  text-align: center;
+  font-size: 75px;
+  font-family: "Jaini", serif;
+  color: white;
+}
+
+.tadpatra {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.tadpatra video {
+  border: 5px solid var(--bg-color);
+}
+
+.tadpatra1 p {
+  font-size: 40px;
+  text-align: center;
+  font-family: "Laila", serif;
+  color: white;
+}
+
+.adbtn {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  padding: 8px 20px;
+  font-size: 18px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+}
+
+.adbtn:hover {
+  border: 1px solid var(--bg-color);
+  background: var(--bg-color);
+  transition: 1s;
+}
+
+.adbtn i {
+  padding-right: 10px;
+}
+
+@media (max-width: 700px) {
+  #tadpatra h1 {
+    font-size: 50px;
+  }
+
+  .tadpatra {
+    flex-direction: column-reverse;
+    padding: 10px 20px;
+  }
+
+  .tadpatra video {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .tadpatra1 p {
+    font-size: 25px;
+  }
+}
+
+/* ---------------------ad---------------------- */
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides img {
+  cursor: pointer;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background: rgba(255, 255, 255, 0.5);
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 700px) {
+  .text {
+    font-size: 11px;
+  }
+
+  .prev,
+  .next {
+    margin-top: -15px;
+    padding: 8px;
+    font-size: 12px;
+  }
+}
+
+/* --------------------taplink-------------------- */
+#taplink {
+  padding: 50px 100px;
+  background: #222;
+}
+
+#taplink h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Reddit Sans", serif;
+  font-weight: 1100;
+  padding: 20px;
+  color: white;
+}
+
+.taplink {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.taplink1 {
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+}
+
+.taplink1 img {
+  width: 300px;
+  border-radius: 10px;
+  border: 2px solid #222;
+}
+
+.taplink1 img:hover {
+  box-shadow: 0 0 15px white;
+}
+
+.taplink1 p {
+  text-align: center;
+  font-size: 17px;
+  color: var(--lightgray-color);
+  font-family: "Reddit Sans", serif;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  #taplink {
+    padding: 10px 20px;
+  }
+
+  #taplink h1 {
+    font-size: 35px;
+    padding: 10px;
+  }
+
+  .taplink {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .taplink1 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* ---------------------sessions------------------- */
+
+#session {
+  padding: 20px 0;
+  background-color: var(--gray-color);
+}
+
+#session h3 {
+  text-align: center;
+  font-size: 50px;
+  color: var(--red-color);
+  color: white;
+  font-family: "Eczar", serif;
+  font-weight: 600;
+}
+
+#session p {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  font-family: "Eczar", serif;
+  font-weight: 600;
+  margin: 5px;
+  margin-bottom: 100px;
+}
+
+.session {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  margin: 0 150px;
+}
+
+.session a {
+  text-decoration: none;
+}
+
+.session {
+  position: relative;
+  display: flex;
+  /* padding: 80px 40px; */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+.card {
+  position: relative;
+  width: 350px;
+  height: 180px;
+  background: white;
+  transition: 0.5s;
+}
+
+.card:hover {
+  height: 350px;
+}
+
+.card .line {
+  position: absolute;
+  inset: 0;
+  background: black;
+  overflow: hidden;
+}
+
+.card .line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 120px;
+  background: linear-gradient(
+    transparent,
+    #43f3ff,
+    #43f3ff,
+    #43f3ff,
+    transparent
+  );
+  animation: animate 4s linear infinite;
+  animation-play-state: paused;
+}
+
+.card:hover .line::before {
+  animation-play-state: running;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.card .line::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: #292929;
+}
+
+.card .block1 {
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  width: 250px;
+  height: 150px;
+  transform: translate(-50%);
+  background: black;
+  transition: 0.5s;
+  z-index: 10;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover .block1 {
+  top: 25px;
+}
+
+.card .block1::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 150px;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    transparent,
+    #ff3c7b,
+    #ff3c7b,
+    #ff3c7b,
+    transparent
+  );
+  animation: animate2 6s linear infinite;
+  animation-play-state: paused;
+}
+
+.card:hover .block1::before {
+  animation-play-state: running;
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+.card .block1::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: #292929;
+}
+
+.card .block2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.card .block2 .block3 {
+  padding: 30px 20px;
+  text-align: center;
+  width: 100%;
+  transition: 0.5s;
+  transform: translateY(145px);
+}
+
+.card:hover .block2 .block3 {
+  transform: translateY(0px);
+}
+
+.block1 h2 {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-size: 35px;
+  font-family: "Khand", sans-serif;
+  font-weight: 900;
+  z-index: 1;
+}
+
+.block3 h4 {
+  text-align: center;
+  color: white;
+  font-size: 23px;
+  font-family: "Eczar", serif;
+  font-weight: 500;
+}
+
+@media (max-width: 700px) {
+  #session h3 {
+    font-size: 30px;
+  }
+
+  #session p {
+    font-size: 20px;
+  }
+}
+
+/* ----------------frames--------------- */
+
+#frame {
+  position: relative;
+  background: #222;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.frame1 {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.3s ease-out;
+  will-change: transform;
+  padding-bottom: 20px;
+}
+
+.frame3 {
+  display: flex;
+  padding-left: 200px;
+  gap: 20px;
+  transition: transform 0.3s ease-out;
+  will-change: transform;
+}
+
+.frame2 img {
+  width: 250px;
+  height: auto;
+  border: 5px solid rgb(29, 0, 20);
+}
+
+.phone {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .laptop {
+    display: none;
+  }
+  .phone {
+    display: block;
+    justify-items: center;
+  }
+
+  .frame2 img {
+    width: 300px;
+    height: auto;
+    border: 5px solid rgb(29, 0, 20);
+    border-radius: 10px;
+  }
+
+  .frame2 {
+    margin: 10px;
+  }
+
+  .frame4 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ------------------footer------------------ */
+
+footer {
+  margin-top: 20px;
+  background-color: var(--gray-color);
+}
+
+#footer {
+  display: flex;
+  flex-basis: column;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.foot1 h1 {
+  margin-top: 20px;
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  font-family: "Reddit Sans", serif;
+  font-weight: 1100;
+}
+
+.foot1 p {
+  text-align: center;
+  font-size: 25px;
+  color: var(--lightgray-color);
+  font-family: "Reddit Sans", serif;
+  font-weight: 700;
+}
+
+.sub-foot1 {
+  margin-top: 20px;
+}
+
+.sub-foot1 h2 {
+  font-size: 45px;
+  text-align: center;
+  /* color: var(--lightred-color); */
+  color: rgb(54, 181, 231);
+  font-family: "Khand", sans-serif;
+  font-weight: 800;
+}
+
+.sub-foot1 p {
+  font-family: "Laila", serif;
+  color: white;
+  font-weight: 500;
+}
+
+.foot2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.foot3 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+}
+
+.foot3 p {
+  font-weight: 900;
+  font-family: "Reddit Sans", sans-serif;
+  padding: 10px;
+  font-size: 24px;
+  color: var(--lightgray-color);
+}
+
+.foot3 a {
+  text-decoration: none;
+  color: white;
+  font-family: "Lato", sans-serif;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.foot3 a:hover {
+  color: var(--lightred-color);
+  transition: 0.5s ease-in-out;
+}
+
+.fline {
+  height: 1px;
+  width: 100%;
+  background-color: var(--lightgray-color);
+}
+
+.footer2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer2 p {
+  color: var(--lightgray-color);
+  font-size: 20px;
+  text-align: center;
+  margin-top: 5px;
+  padding: 5px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  #footer {
+    flex-direction: column;
+  }
+
+  .foot1 h1 {
+    font-size: 30px;
+  }
+
+  .sub-foot1 h2 {
+    font-size: 25px;
+  }
+
+  .sub-foot1 p {
+    font-size: 17px;
+  }
+
+  .foot2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .foot3 p {
+    font-size: 18px;
+  }
+
+  .foot3 a {
+    font-size: 16px;
+  }
+
+  .fline {
+    height: 1px;
+  }
+
+  .footer2 p {
+    font-size: 15px;
+  }
+}

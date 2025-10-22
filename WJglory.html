@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonderful Jainism - Proud To Be A Jain</title>
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.png">
+    <link rel="stylesheet" href="WJglory.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/solid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <a href="index.html"><img src="./Images/logo.png" alt=""></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">MUNI SHRI</a>
+                        <div class="more">
+                            <ul>
+                                <li><a href="biography.html">Biography</a></li>
+                                <li><a href="sangh.html">Sangh Information</a></li>
+                                <li><a href="#">Photos</a></li>
+                                <li><a href="pooja.html">Poojan</a></li>
+                                <li><a href="aarti.html">Aarti</a></li>
+                                <li><a href="documentary.html">Documentary</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="sessions.html">SESSIONS</a></li>
+                    <li><a href="bhajan.html">BHAJAN</a></li>
+                    <li><a href="#">OTHERS</a>
+                        <div class="more">
+                            <ul>
+                                <li><a href="literature.html">Sahitya</a></li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="#">Quotes</a></li>
+                                <li><a href="symposium.html">Symposiums</a></li>
+                                <li><a href="#">Podcasts</a></li>
+                                <li><a href="WJglory.html">Glorious History of Wonderful Jainism</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <button onclick="topFunction()" id="bttbtn" title="Go to top"><i class="fa-regular fa-arrow-up"></i></button>
+    </div>
+
+    <script>
+
+        var navlinks = document.getElementById("navlinks");
+
+        function showMenu() {
+            navlinks.style.right = "0";
+        }
+        function hideMenu() {
+            navlinks.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        let mybutton = document.getElementById("bttbtn");
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <!-- ----------------------glory of wonderful jainism------------------------ -->
+
+    <section id="glory">
+        <h1>Glory of Wonderful Jainism</h1>
+        <div class="glory">
+            <h2>Great Leaders and Peoples of World on Jainism</h2>
+            <div class="glory1">
+                <img src="./Images/glory/h1.png" alt="">
+                <p><span class="hindi">जैन धर्म ने, अपनी समृद्ध दार्शनिक विरासत के साथ, कई महान लोगों और नेताओं को
+                        प्रेरित किया है जिन्होंने इसके अहिंसा, सत्य और आत्म-अनुशासन के सिद्धांतों को अपनाया है। महात्मा
+                        गांधी जैसी प्रमुख हस्तियां, जो जैन शिक्षाओं से गहराई से प्रभावित थीं, ने सामाजिक और राजनीतिक
+                        सक्रियता के केंद्रीय सिद्धांत के रूप में अहिंसा की वकालत की। विभिन्न जैन मुनियों और विद्वानों
+                        सहित अन्य नेताओं ने विश्व स्तर पर जैन दर्शन के प्रसार में योगदान दिया है, लोगों को नैतिक जीवन
+                        जीने और आध्यात्मिक विकास करने के लिए प्रेरित किया है। उनका नेतृत्व आज भी दुनिया में शांति, करुणा
+                        और टिकाऊ जीवन पर चर्चा को आकार दे रहा है।</span> <span class="english">
+                        Jainism, with its rich philosophical heritage, has inspired numerous great people and leaders
+                        who have embraced its principles of non-violence, truth, and self-discipline. Prominent figures
+                        such as Mahatma Gandhi, who was deeply influenced by Jain teachings, advocated for ahimsa
+                        (non-violence) as a central tenet of social and political activism. Other leaders, including
+                        various Jain monks and scholars, have contributed to the spread of Jain philosophy globally,
+                        inspiring individuals to live ethical lives and pursue spiritual growth. Their leadership
+                        continues to shape discussions on peace, compassion, and sustainable living in the world
+                        today.</span> <br>
+                    <button onclick="toggleLanguage(this)" class="enBtn">Read in English</button>
+                </p>
+            </div>
+            <a href="gpeople.html"><button class="exBtn">Explore It
+                </button></a>
+        </div>
+        <!-- <div class="glory">
+            <h2>Story of Glory of Wonderful Jainism</h2>
+            <div class="glory1">
+                <img src="./Images/glory/h2.png" alt="">
+                <p><span class="hindi">गहन शिक्षाओं, गुणों और ऐतिहासिक घटनाओं पर प्रकाश डालती हैं जो जैन परंपरा में
+                        निहित ज्ञान और करुणा को प्रदर्शित करती हैं। इन कहानियों में तीर्थंकरों, विशेष रूप से भगवान
+                        महावीर के जीवन और आध्यात्मिक यात्राएं शामिल हैं, जिन्होंने अहिंसा, सत्य और आत्म-नियंत्रण के
+                        सिद्धांतों का उदाहरण दिया। कहानियाँ अक्सर जैन धर्म की गहरी आध्यात्मिक विरासत को दर्शाते हुए अपार
+                        साहस, करुणा और आत्म-बलिदान के कृत्यों का वर्णन करती हैं। वे व्यक्तियों को ईमानदारी, सभी जीवित
+                        प्राणियों के प्रति सम्मान और व्यक्तिगत और सामूहिक कल्याण के प्रति प्रतिबद्धता के साथ जीने के लिए
+                        प्रेरित करते हैं, जिससे जैन दर्शन की कालातीत महिमा रोशन होती है।</span> <span class="english">
+                        Highlight the profound teachings, virtues, and historical events that showcase the wisdom and
+                        compassion embedded in the Jain tradition. These stories include the lives and spiritual
+                        journeys of the Tirthankaras, especially Lord Mahavir, who exemplified the principles of
+                        non-violence, truth, and self-control. The tales often recount acts of immense courage,
+                        compassion, and self-sacrifice, illustrating the deep spiritual legacy of Jainism. They inspire
+                        individuals to live with integrity, respect for all living beings, and a commitment to personal
+                        and collective well-being, thereby illuminating the timeless glory of Jain philosophy.</span>
+                    <br>
+                    <button onclick="toggleLanguage(this)" class="enBtn">Read in English</button>
+                </p>
+            </div>
+            <a href=""><button class="exBtn">Explore It
+                </button></a>
+        </div>
+        <div class="glory">
+            <h2>Jain Temples and Idols with Glorious History</h2>
+            <div class="glory1">
+                <img src="./Images/glory/h3.png" alt="">
+                <p><span class="hindi">जैन धर्म की समृद्ध वास्तुकला और आध्यात्मिक विरासत की खोज करती है, जो समय की कसौटी
+                        पर खरे उतरे मंदिरों और मूर्तियों को प्रदर्शित करती है। ये मंदिर, अक्सर जटिल नक्काशी और
+                        आश्चर्यजनक कलाकृति से सजाए जाते हैं, श्रद्धेय तीर्थंकरों, विशेष रूप से भगवान महावीर को समर्पित
+                        हैं। पत्थर, संगमरमर और कांस्य जैसी विभिन्न सामग्रियों से बनी मूर्तियाँ पवित्रता, ज्ञानोदय और
+                        करुणा के आदर्शों का प्रतीक हैं। ये पवित्र स्थल, अपने समृद्ध इतिहास के साथ, न केवल पूजा स्थलों के
+                        रूप में बल्कि शांति, अहिंसा और आध्यात्मिक मुक्ति के लिए जैन धर्म की स्थायी प्रतिबद्धता के प्रतीक
+                        के रूप में भी काम करते हैं।</span> <span class="english">
+                        Explores the rich architectural and spiritual heritage of Jainism, showcasing temples and idols
+                        that have stood the test of time. These temples, often adorned with intricate carvings and
+                        stunning artwork, are dedicated to the revered Tirthankaras, particularly Lord Mahavir. The
+                        idols, made of various materials such as stone, marble, and bronze, embody the ideals of purity,
+                        enlightenment, and compassion. These sacred sites, with their rich history, not only serve as
+                        places of worship but also as symbols of Jainism's enduring commitment to peace, non-violence,
+                        and spiritual liberation.</span> <br>
+                    <button onclick="toggleLanguage(this)" class="enBtn">Read in English</button>
+                </p>
+            </div>
+            <a href=""><button class="exBtn">Explore It
+                </button></a>
+        </div>
+        <div class="glory">
+            <h2>Great People in the History of Jainism</h2>
+            <div class="glory1">
+                <img src="./Images/glory/h4.png" alt="">
+                <p><span class="hindi">उन प्रभावशाली शख्सियतों का जश्न मनाते हैं जिन्होंने जैन धर्म की शिक्षाओं और दर्शन
+                        को आकार दिया और आगे बढ़ाया। यह प्रसिद्ध भिक्षुओं, विद्वानों और आध्यात्मिक नेताओं का भी सम्मान
+                        करता है जिन्होंने पीढ़ियों तक अहिंसा, सत्य और करुणा के जैन आदर्शों का प्रसार किया है। पवित्रता,
+                        विनम्रता और ज्ञान का जीवन जीने के प्रति उनके समर्पण ने अनगिनत व्यक्तियों को प्रेरित किया है और
+                        आध्यात्मिक और सामाजिक क्षेत्रों को प्रभावित करना जारी रखा है, जो जैन धर्म की शांति और नैतिक जीवन
+                        की कालातीत विरासत को दर्शाता है।</span> <span class="english">
+                        Celebrates the influential figures who have shaped and advanced the teachings and philosophy of
+                        Jainism. It also honors renowned monks, scholars, and spiritual leaders who have spread Jain
+                        ideals of non-violence, truth, and compassion across generations. Their dedication to living a
+                        life of purity, humility, and wisdom has inspired countless individuals and continues to impact
+                        the spiritual and social realms, reflecting Jainism's timeless legacy of peace and ethical
+                        living.</span> <br>
+                    <button onclick="toggleLanguage(this)" class="enBtn">Read in English</button>
+                </p>
+            </div>
+            <a href="hpeople.html"><button class="exBtn">Explore It
+                </button></a>
+        </div>
+        <div class="glory">
+            <h2>Damage To Jainism</h2>
+            <div class="glory1">
+                <img src="./Images/glory/h5.png" alt="">
+                <p><span class="hindi">दुनिया की सबसे पुरानी और सबसे अनोखी आध्यात्मिक परंपराओं में से एक में महत्वपूर्ण
+                        अंतर्दृष्टि प्रदान करता है। जैन धर्म अहिंसा, सत्य और आत्म-अनुशासन जैसे सिद्धांतों पर आधारित है।
+                        जैन कर्म और पुनर्जन्म की अवधारणा में विश्वास करते हैं, और वे नैतिक जीवन और आध्यात्मिक शुद्धि के
+                        माध्यम से मुक्ति (मोक्ष) के लिए प्रयास करते हैं। यह धर्म पर्यावरणीय स्थिरता और गैर-नुकसान पर जोर
+                        देने के साथ सभी जीवित प्राणियों के प्रति सम्मान को बढ़ावा देता है। जैन मंदिर अपनी जटिल वास्तुकला
+                        के लिए प्रसिद्ध हैं, और पर्युषण जैसे जैन त्योहार उपवास, चिंतन और आध्यात्मिक विकास पर केंद्रित
+                        हैं।</span> <span class="english">
+                        "Facts About Jainism" provides key insights into one of the oldest and most unique spiritual
+                        traditions in the world. Jainism is based on principles such as non-violence (ahimsa), truth
+                        (satya), and self-discipline. Jains believe in the concept of karma and reincarnation, and they
+                        strive for liberation (moksha) through ethical living and spiritual purification. The religion
+                        promotes respect for all living beings, with a strong emphasis on environmental sustainability
+                        and non-harm. Jain temples are renowned for their intricate architecture, and Jain festivals,
+                        such as Paryushana, are centered around fasting, reflection, and spiritual growth.</span> <br>
+                    <button onclick="toggleLanguage(this)" class="enBtn">Read in English</button>
+                </p>
+            </div>
+            <a href=""><button class="exBtn">Explore It
+                </button></a>
+        </div> -->
+
+        <div class="glory">
+            <h2>Facts About Jain Religion</h2>
+            <div class="glory1">
+                <img src="./Images/glory/h6.png" alt="">
+                <p><span class="hindi">जैन धर्म आकर्षक ऐतिहासिक और सांस्कृतिक तथ्यों से समृद्ध है। जैन धर्म के सबसे प्रतिष्ठित प्रतीकों में से एक भारत के श्रवणबेलगोला में भगवान बाहुबली (गोमतेश्वर) की विशाल प्रतिमा है, जो 58 फीट ऊंची है और परम त्याग और आध्यात्मिक शक्ति का प्रतिनिधित्व करती है। एक अन्य महत्वपूर्ण प्रतिमा भगवान अंतरिक्ष पार्श्वनाथ की है, जो 23वें तीर्थंकर को समर्पित है, जो अहिंसा और ध्यान की शिक्षाओं के लिए जाने जाते हैं। इसके अतिरिक्त, एक लोकप्रिय लेकिन विवादित धारणा है कि चीन की महान दीवार का निर्माण, आंशिक रूप से, आक्रमणों से बचाने के लिए किया गया था, लेकिन यह रणनीतिक और सुरक्षात्मक मूल्यों की याद दिलाने का भी काम करता है जो जीवन और सद्भाव की सुरक्षा के जैन सिद्धांतों के साथ प्रतिध्वनित होते हैं। जैन धर्म वास्तुकला को भी प्रभावित करता है, जैसा कि जटिल मंदिर डिजाइनों में देखा जाता है, और दुनिया भर में नैतिक जीवन और अहिंसा को प्रेरित करता है।</span> <span
+                        class="english">
+                        Jainism is rich with fascinating historical and cultural facts. One of the most iconic symbols
+                        of Jainism is the massive statue of Lord Bahubali (Gomateshwar) in Shravanabelagola, India,
+                        which stands at 58 feet and represents the ultimate renunciation and spiritual strength. Another
+                        significant statue is of Lord Antriksh Parshvnath, dedicated to the 23rd Tirthankara, known for
+                        his teachings on non-violence and meditation. Additionally, there’s a popular but debated belief
+                        that the Great Wall of China was built, in part, to protect against invasions, but it also
+                        serves as a reminder of the strategic and protective values that resonate with Jain principles
+                        of safeguarding life and harmony. Jainism also influences architecture, as seen in intricate
+                        temple designs, and continues to inspire ethical living and non-violence around the
+                        world.</span>
+                    <br>
+                    <button onclick="toggleLanguage(this)" class="enBtn">Read in English</button>
+                </p>
+            </div>
+            <a href="facts.html"><button class="exBtn">Explore It
+                </button></a>
+        </div>
+
+        <div class="glory">
+            <h2>Famous Jain Bussiness Leaders</h2>
+            <div class="glory1">
+                <img src="./Images/glory/h7.png" alt="famous jain bussiness leaders by wonderful jainism">
+                <p><span class="hindi">जैन कारोबारी नेताओं ने भारत के आर्थिक परिदृश्य को आकार देने में महत्वपूर्ण भूमिका
+                        निभाई है, जो अपनी उद्यमशीलता की भावना, नैतिक प्रथाओं और सामुदायिक कल्याण के प्रति प्रतिबद्धता के
+                        लिए जाने जाते हैं। वे अक्सर अपने व्यावसायिक उद्यमों में अखंडता, स्थिरता और सामाजिक जिम्मेदारी
+                        जैसे मूल्यों पर जोर देते हैं। बिड़ला, शाह और पोद्दार परिवारों जैसी प्रमुख जैन व्यावसायिक
+                        हस्तियों ने कपड़ा, सीमेंट और वित्त सहित विभिन्न उद्योगों में महत्वपूर्ण योगदान दिया है, साथ ही
+                        शैक्षिक, स्वास्थ्य देखभाल और धर्मार्थ पहलों का भी समर्थन किया है। उनकी सफलता का श्रेय काफी हद तक
+                        नवाचार, सुदृढ़ प्रबंधन और पारंपरिक मूल्यों के पालन पर दिए गए मजबूत फोकस को दिया जाता है।</span>
+                    <span class="english">
+                        Jain business leaders have played a significant role in shaping India's economic landscape,
+                        known for their entrepreneurial spirit, ethical practices, and commitment to community welfare.
+                        They often emphasize values such as integrity, sustainability, and social responsibility in
+                        their business ventures. Prominent Jain business figures, such as the Birla, Shah, and Poddar
+                        families, have made substantial contributions to various industries, including textiles, cement,
+                        and finance, while also supporting educational, healthcare, and charitable initiatives. Their
+                        success is largely attributed to a strong focus on innovation, sound management, and adherence
+                        to traditional values.</span>
+                    <br>
+                    <button onclick="toggleLanguage(this)" class="enBtn">Read in English</button>
+                </p>
+            </div>
+            <a href="bussiness.html"><button class="exBtn">Explore It
+                </button></a>
+        </div>
+
+        <div class="glory">
+            <h2>Famous Jain People in Film Industry</h2>
+            <div class="glory1">
+                <img src="./Images/glory/h8.png" alt="">
+                <p><span class="hindi">जैन लोगों ने कैमरे के सामने और पीछे दोनों जगह उत्कृष्ट प्रदर्शन करते हुए भारतीय
+                        फिल्म उद्योग में उल्लेखनीय योगदान दिया है। कई जैन सफल निर्माता, निर्देशक और अभिनेता हैं, जो अपनी
+                        रचनात्मकता और व्यावसायिक कौशल को उद्योग में ला रहे हैं। प्रमुख हस्तियों में प्रसिद्ध निर्माता और
+                        व्यवसायी, दिवंगत चंद्र प्रकाश जैन और लोकप्रिय अभिनेता शिल्पा शेट्टी शामिल हैं। जैन व्यक्ति अपने
+                        अनुशासन, व्यावसायिकता और नैतिकता की एक मजबूत भावना के लिए जाने जाते हैं, जो अक्सर मनोरंजन जगत
+                        में उनके काम में परिलक्षित होता है। उनका प्रभाव सिनेमा के निर्माण से लेकर प्रचार तक विभिन्न
+                        पहलुओं पर महसूस किया जा रहा है, जो उद्योग के विकास में महत्वपूर्ण योगदान दे रहा है।</span> <span
+                        class="english">
+                        Jain people have made notable contributions to the Indian film industry, excelling both in front
+                        of and behind the camera. Many Jains are successful producers, directors, and actors, bringing
+                        their creativity and business acumen to the industry. Prominent figures include renowned
+                        producer and businessman, the late Chandra Prakash Jain, and popular actor Shilpa Shetty. Jain
+                        individuals are known for their discipline, professionalism, and a strong sense of ethics, which
+                        often translates into their work in the entertainment world. Their influence continues to be
+                        felt across various facets of cinema, from production to promotion, contributing significantly
+                        to the growth of the industry.</span>
+                    <br>
+                    <button onclick="toggleLanguage(this)" class="enBtn">Read in English</button>
+                </p>
+            </div>
+            <a href="film_industry.html"><button class="exBtn">Explore It
+                </button></a>
+        </div>
+
+        <!-- <div class="glory">
+            <h2>Famous Jain Politician</h2>
+            <div class="glory1">
+                <img src="./Images/glory/h7.png" alt="">
+                <p><span class="hindi">गहन शिक्षाओं, गुणों और ऐतिहासिक घटनाओं पर प्रकाश डालती हैं जो जैन परंपरा में
+                        निहित ज्ञान और करुणा को प्रदर्शित करती हैं। इन कहानियों में तीर्थंकरों, विशेष रूप से भगवान
+                        महावीर के जीवन और आध्यात्मिक यात्राएं शामिल हैं, जिन्होंने अहिंसा, सत्य और आत्म-नियंत्रण के
+                        सिद्धांतों का उदाहरण दिया। कहानियाँ अक्सर जैन धर्म की गहरी आध्यात्मिक विरासत को दर्शाते हुए अपार
+                        साहस, करुणा और आत्म-बलिदान के कृत्यों का वर्णन करती हैं। वे व्यक्तियों को ईमानदारी, सभी जीवित
+                        प्राणियों के प्रति सम्मान और व्यक्तिगत और सामूहिक कल्याण के प्रति प्रतिबद्धता के साथ जीने के लिए
+                        प्रेरित करते हैं, जिससे जैन दर्शन की कालातीत महिमा रोशन होती है।</span> <span class="english">
+                            Jain people have made significant contributions to Indian politics, with many members of the community playing key roles in shaping the nation's political landscape. Known for their dedication to social welfare and ethical values, several Jain politicians have held prominent positions in state and national governments. Notable figures include leaders like Shantilal Shah and Suresh Jain, who have been involved in legislative roles, advocating for economic reforms, education, and social justice. Their influence in politics is often driven by a commitment to serving the public and promoting values of non-violence, peace, and harmony, which are central to Jain philosophy.</span>
+                    <br>
+                    <button onclick="toggleLanguage(this)" class="enBtn">Read in English</button>
+                </p>
+            </div>
+            <a href=""><button class="exBtn">Explore It
+                </button></a>
+        </div> -->
+
+    </section>
+</body>
+
+</html>
+
+<script>
+    function toggleLanguage(button) {
+        var parent = button.parentElement; // Get the parent element
+        var hindiText = parent.querySelector(".hindi");
+        var englishText = parent.querySelector(".english");
+        var btnText = button;
+
+        if (hindiText.style.display === "none") {
+            hindiText.style.display = "inline";
+            btnText.innerHTML = "Read in English";
+            englishText.style.display = "none";
+        } else {
+            hindiText.style.display = "none";
+            btnText.innerHTML = "हिंदी में पढ़ें";
+            englishText.style.display = "inline";
+        }
+    }
+</script>

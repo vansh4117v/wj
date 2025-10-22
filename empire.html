@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonderful Jainism - Proud To Be A Jain</title>
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.png">
+    <link rel="stylesheet" href="empire.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/solid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Fredoka:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alice&family=Alkatra:wght@400..700&family=Amita:wght@400;700&family=Eczar:wght@400..800&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Fredoka:wght@300..700&family=Gotu&family=Jaini&family=Kalam:wght@300;400;700&family=Khand:wght@300;400;500;600;700&family=Laila:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Martel:wght@200;300;400;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Playwrite+TZ+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ranga:wght@400;700&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Rozha+One&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <a href="index.html"><img src="./Images/logo.png" alt=""></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">MUNI SHRI</a>
+                        <div class="more">
+                            <ul>
+                                <li><a href="biography.html">Biography</a></li>
+                                <li><a href="sangh.html">Sangh Information</a></li>
+                                <li><a href="#">Photos</a></li>
+                                <li><a href="pooja.html">Poojan</a></li>
+                                <li><a href="aarti.html">Aarti</a></li>
+                                <li><a href="documentary.html">Documentary</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="sessions.html">SESSIONS</a></li>
+                    <li><a href="bhajan.html">BHAJAN</a></li>
+                    <li><a href="#">OTHERS</a>
+                        <div class="more">
+                            <ul>
+                                <li><a href="literature.html">Sahitya</a></li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="#">Quotes</a></li>
+                                <li><a href="symposium.html">Symposiums</a></li>
+                                <li><a href="#">Podcasts</a></li>
+                                <li><a href="WJglory.html">Glorious History of Wonderful Jainism</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <button onclick="topFunction()" id="bttbtn" title="Go to top"><i class="fa-regular fa-arrow-up"></i></button>
+    </div>
+
+    <script>
+
+        var navlinks = document.getElementById("navlinks");
+
+        function showMenu() {
+            navlinks.style.right = "0";
+        }
+        function hideMenu() {
+            navlinks.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        let mybutton = document.getElementById("bttbtn");
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+    <!-- ----------------------------great monarch in the history-------------------- -->
+
+    <section id="hpeople">
+        <h1>Great Jain Monarch in Indian History</h1>
+
+        <div class="hpeople">
+            <h2>Mauryan Empire</h2>
+            <div class="hpeople1">
+                <img src="./Images/glory/hpeople/mauryan_empire.png" alt="">
+                <p><span class="hindi">मौर्य साम्राज्य दक्षिण एशिया में भौगोलिक दृष्टि से विस्तृत लौह युग की ऐतिहासिक
+                        शक्ति थी जिसका आधार मगध था। <b>चंद्रगुप्त मौर्य</b> द्वारा लगभग 320 ईसा पूर्व में स्थापित, यह 185 ईसा
+                        पूर्व तक एक स्वतंत्र रूप में अस्तित्व में रहा। <br>
+                        पाटलिपुत्र (आधुनिक पटना) में केन्द्रित मौर्य साम्राज्य में एक विशाल क्षेत्र शामिल था, जिसमें सिंधु-गंगा का मैदान और वे क्षेत्र शामिल थे जो अब अफगानिस्तान, नेपाल, पाकिस्तान, भारत और बांग्लादेश का हिस्सा हैं।
+                    </span>
+                    <span class="english">
+                        The Maurya Empire was a geographically extensive Iron Age historical power in South Asia with
+                        its power base in Magadha. <b>Founded by Chandragupta Maurya</b> around c. 320 BCE, it existed in
+                        loose-knit fashion until 185 BCE. <br>
+                        The Mauryan Empire, centered in Pataliputra (modern Patna), encompassed a vast territory, including the Indo-Gangetic Plain and regions that are now part of Afghanistan, Nepal, Pakistan, India, and Bangladesh. 
+                    </span> <br>
+                    <button onclick="toggleLanguage(this)" class="enBtn">हिंदी में पढ़ें</button>
+                </p>
+            </div>
+        </div>
+
+
+    </section>
+
+
+</body>
+
+</html>
+
+<script>
+    function toggleLanguage(button) {
+        var parent = button.parentElement; // Get the parent element
+        var hindiText = parent.querySelector(".hindi");
+        var englishText = parent.querySelector(".english");
+        var btnText = button;
+
+        if (englishText.style.display === "none") {
+            englishText.style.display = "inline";
+            btnText.innerHTML = "हिंदी में पढ़ें";
+            hindiText.style.display = "none";
+        } else {
+            englishText.style.display = "none";
+            btnText.innerHTML = "Read in English";
+            hindiText.style.display = "inline";
+        }
+    }
+</script>
