@@ -1,0 +1,37 @@
+/* Global Styles - Applied to entire application */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --gray-color: #2f2f2f;
+    --lightgray-color: #838383;
+    --red-color: rgb(155, 0, 0);
+    --lightred-color: rgb(224, 0, 0);
+    --bg-color: #654321;
+    --light-bg-color: #865b2f;
+    --universal-color: #f9f3e7;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: linear-gradient(var(--red-color), var(--gray-color));
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--lightred-color);
+    border-radius: 10px;
+    width: 5px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
